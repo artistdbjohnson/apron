@@ -1,0 +1,20 @@
+{
+  "rule": "Harbor: binaries never go to GitHub. Live /brand/* is rewritten or base64-deployed.",
+  "local": "apps/web/dist/brand/",
+  "rewrites": {
+    "/brand/crew.jpg": "https://d.uguu.se/yxdgCOpJ.jpg",
+    "/brand/hero-poster.jpg": "https://h.uguu.se/ZyJofEHp.jpg",
+    "/brand/endcard.jpg": "https://n.uguu.se/xurPCEGJ.jpg",
+    "/brand/tail.jpg": "https://d.uguu.se/YLUMOUQW.jpg",
+    "/brand/phone.jpg": "https://h.uguu.se/QkoqxryN.jpg",
+    "/brand/cabin.jpg": "https://n.uguu.se/ctbFVMFx.jpg",
+    "/brand/walk.jpg": "https://h.uguu.se/NUwfYiPN.jpg",
+    "/brand/ramp.jpg": "https://n.uguu.se/YabrBaSg.jpg",
+    "/brand/flight-deck.jpg": "https://d.uguu.se/SLAOWWrl.jpg",
+    "/brand/ops.jpg": "https://d.uguu.se/iyNkoXRO.jpg",
+    "/brand/hero.mp4": "https://n.uguu.se/OShWWnGW.mp4",
+    "/brand/sting.mp4": "https://h.uguu.se/AMgMsaqy.mp4"
+  },
+  "filebin_backup": "https://filebin.net/airnorte-apron-brand/",
+  "probe": "https://apron-rewrite-probe.vercel.app/brand/crew.jpg"
+}

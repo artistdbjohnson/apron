@@ -12,3 +12,14 @@ apps/mobile/node_modules
 apps/mobile/.expo
 coverage
 .turbo
+
+# Harbor rule: never commit generated binaries to git.
+# Imagine jpg/png/mp4 stay local and land on Vercel via base64/rewrites.
+apps/web/dist/brand/*.jpg
+apps/web/dist/brand/*.png
+apps/web/dist/brand/*.mp4
+apps/web/public/brand/*.jpg
+apps/web/public/brand/*.png
+apps/web/public/brand/*.mp4
+*.mp4
+!apps/web/src/brand/*.svg
