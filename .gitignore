@@ -1,0 +1,14 @@
+node_modules
+dist-src
+.DS_Store
+.env
+.env.local
+*.log
+.vercel
+apps/api/dist
+apps/web/node_modules
+apps/api/node_modules
+apps/mobile/node_modules
+apps/mobile/.expo
+coverage
+.turbo

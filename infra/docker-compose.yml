@@ -1,0 +1,34 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: apron
+      POSTGRES_PASSWORD: apron
+      POSTGRES_DB: apron
+    ports:
+      - "5432:5432"
+    volumes:
+      - apron_pg:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U apron"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: ../apps/api
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3001
+      JWT_SECRET: apron-dev-norte-line
+      DATABASE_URL: postgres://apron:apron@postgres:5432/apron
+    ports:
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  apron_pg:
