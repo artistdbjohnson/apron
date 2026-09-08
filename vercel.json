@@ -1,18 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {"source": "/brand/crew.jpg", "destination": "https://d.uguu.se/yxdgCOpJ.jpg"},
-    {"source": "/brand/hero-poster.jpg", "destination": "https://h.uguu.se/ZyJofEHp.jpg"},
-    {"source": "/brand/endcard.jpg", "destination": "https://n.uguu.se/xurPCEGJ.jpg"},
-    {"source": "/brand/tail.jpg", "destination": "https://d.uguu.se/YLUMOUQW.jpg"},
-    {"source": "/brand/phone.jpg", "destination": "https://h.uguu.se/QkoqxryN.jpg"},
-    {"source": "/brand/cabin.jpg", "destination": "https://n.uguu.se/ctbFVMFx.jpg"},
-    {"source": "/brand/walk.jpg", "destination": "https://h.uguu.se/NUwfYiPN.jpg"},
-    {"source": "/brand/ramp.jpg", "destination": "https://n.uguu.se/YabrBaSg.jpg"},
-    {"source": "/brand/flight-deck.jpg", "destination": "https://d.uguu.se/SLAOWWrl.jpg"},
-    {"source": "/brand/ops.jpg", "destination": "https://d.uguu.se/iyNkoXRO.jpg"},
-    {"source": "/brand/hero.mp4", "destination": "https://n.uguu.se/OShWWnGW.mp4"},
-    {"source": "/brand/sting.mp4", "destination": "https://h.uguu.se/AMgMsaqy.mp4"}
-  ]
+  "trailingSlash": false
 }
